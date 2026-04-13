@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Are Best — Honest Product Reviews & Comparisons</title>
+  <meta name="description" content="Find the best products with honest, detailed reviews and comparisons. No fluff, no paid placements — just real recommendations.">
+  <link rel="canonical" href="https://whatarebest.com/">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --card-bg: #fff;
+      --border: #e5e7eb;
+      --muted: #6b7280;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+
+    /* Header */
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 1.4rem; font-weight: 700; }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 1.5rem; font-weight: 500; color: var(--muted); }
+    nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      max-width: 800px;
+      margin: 4rem auto 3rem;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; line-height: 1.2; }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 600px; margin: 0 auto; }
+
+    /* Categories Grid */
+    .categories {
+      max-width: 1100px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .card .cta {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .card .cta::after { content: ' →'; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer .disclosure {
+      max-width: 700px;
+      margin: 0 auto 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      header { padding: 0.8rem 1rem; }
+      .categories { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">What Are <span>Best</span></div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/automotive/">Automotive</a>
+      <a href="/home/">Home</a>
+      <a href="/outdoor/">Outdoor</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find the best products — without the BS</h1>
+    <p>Real reviews, honest comparisons, and straightforward recommendations. We test and research so you don't have to.</p>
+  </section>
+
+  <section class="categories">
+    <div class="card">
+      <h2>🚗 Automotive</h2>
+      <p>Seat covers, windshield wipers, floor mats, and accessories for Jeep, Bronco, trucks, and more.</p>
+      <a href="/automotive/" class="cta">Browse automotive picks</a>
+    </div>
+    <div class="card">
+      <h2>🏠 Home & HVAC</h2>
+      <p>Air filters, furnace filters, and home essentials that actually last. Stop overpaying for junk.</p>
+      <a href="/home/" class="cta">Browse home picks</a>
+    </div>
+    <div class="card">
+      <h2>🏕️ Outdoor & Off-Road</h2>
+      <p>Overlanding gear, UTV accessories, camping equipment, and everything for life off the pavement.</p>
+      <a href="/outdoor/" class="cta">Browse outdoor picks</a>
+    </div>
+    <div class="card">
+      <h2>⛳ Sports & Recreation</h2>
+      <p>Golf gear, sporting goods, and fun accessories that make great gifts.</p>
+      <a href="/sports/" class="cta">Browse sports picks</a>
+    </div>
+    <div class="card">
+      <h2>🔧 Tools & Workshop</h2>
+      <p>Sandpaper, welding gear, hand tools, and workshop essentials reviewed by people who use them.</p>
+      <a href="/tools/" class="cta">Browse tool picks</a>
+    </div>
+    <div class="card">
+      <h2>🔥 Best Sellers</h2>
+      <p>The most popular picks across all categories. Updated weekly based on reader favorites.</p>
+      <a href="/best-sellers/" class="cta">See what's trending</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases. This doesn't affect our recommendations — we only feature products we'd actually use.</p>
+    <p>&copy; 2026 WhatAreBest.com. All rights reserved.</p>
+  </footer>
+</body>
+</html>
