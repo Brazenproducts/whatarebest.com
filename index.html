@@ -1,248 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Are Best — Honest Product Reviews & Comparisons</title>
-  <meta name="description" content="Find the best products with honest, detailed reviews and comparisons. No fluff, no paid placements — just real recommendations updated for 2026.">
-  <link rel="canonical" href="https://whatarebest.com/">
-  <style>
-    :root {
-      --bg: #fafafa;
-      --text: #1a1a1a;
-      --accent: #2563eb;
-      --accent-hover: #1d4ed8;
-      --card-bg: #fff;
-      --border: #e5e7eb;
-      --muted: #6b7280;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--accent-hover); }
-
-    /* Header */
-    header {
-      background: var(--card-bg);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .logo { font-size: 1.4rem; font-weight: 700; }
-    .logo span { color: var(--accent); }
-    nav a { margin-left: 1.5rem; font-weight: 500; color: var(--muted); }
-    nav a:hover { color: var(--text); }
-
-    /* Hero */
-    .hero {
-      max-width: 800px;
-      margin: 4rem auto 3rem;
-      text-align: center;
-      padding: 0 1.5rem;
-    }
-    .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; line-height: 1.2; }
-    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 600px; margin: 0 auto; }
-
-    /* Latest Reviews Section */
-    .latest {
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem;
-    }
-    .latest h2 { font-size: 1.5rem; margin-bottom: 1.2rem; border-top: 1px solid var(--border); padding-top: 1rem; }
-    .latest-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1rem;
-    }
-    .review-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.2rem 1.5rem;
-    }
-    .review-card:hover { border-color: var(--accent); }
-    .review-card .category { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent); margin-bottom: 0.3rem; }
-    .review-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
-    .review-card p { font-size: 0.88rem; color: var(--muted); margin-bottom: 0.4rem; }
-    .review-card .updated { font-size: 0.78rem; color: var(--muted); }
-
-    /* Categories Grid */
-    .categories {
-      max-width: 1100px;
-      margin: 0 auto 4rem;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2rem;
-      transition: box-shadow 0.2s;
-    }
-    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    .card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
-    .card .cta {
-      display: inline-block;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    .card .cta::after { content: ' →'; }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-    footer .disclosure {
-      max-width: 700px;
-      margin: 0 auto 0.5rem;
-      font-size: 0.8rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 1.8rem; }
-      header { padding: 0.8rem 1rem; }
-      .categories { grid-template-columns: 1fr; }
-    }
-  </style>
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="What Are Best — Honest Product Reviews & Comparisons">
-    <meta property="og:url" content="https://whatarebest.com/">
-    <meta property="og:site_name" content="whatarebest.com">
-    <meta property="og:description" content="Find the best products with honest, detailed reviews and comparisons. No fluff, no paid placements — just real recommendations updated for 2026.">
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Are Best — Honest Product Reviews & Comparisons","url":"https://whatarebest.com/","datePublished":"2026-04-13","dateModified":"2026-04-13","publisher":{"@type":"Organization","name":"What Are Best"},"description":"Find the best products with honest, detailed reviews and comparisons. No fluff, no paid placements — just real recommendations updated for 2026."}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Are Best? — Honest Reviews for Everything</title>
+<meta name="description" content="Independent, expert reviews across automotive, home, kitchen, tech, pets, and outdoor gear. Find what's actually worth buying.">
+<link rel="canonical" href="https://whatarebest.com/">
+<meta property="og:title" content="What Are Best? — Honest Reviews for Everything">
+<meta property="og:description" content="Independent, expert reviews across automotive, home, kitchen, tech, pets, and outdoor gear. Find what's actually worth buying.">
+<meta property="og:url" content="https://whatarebest.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="What Are Best">
+<meta property="og:image" content="https://whatarebest.com/og-default.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "What Are Best",
+  "url": "https://whatarebest.com",
+  "description": "Independent review network covering automotive, home, kitchen, tech, pets, and outdoor gear.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://whatarebest.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "What Are Best",
+  "url": "https://whatarebest.com",
+  "sameAs": [
+    "https://youtube.com/@whatarebestpicks",
+    "https://pinterest.com/whatarebest"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://whatarebest.com/"
+  }]
+}
+</script>
 </head>
 <body>
-  <header>
-    <div class="logo"><a href="/" style="color:inherit">What Are <span>Best</span></a></div>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/automotive/">Automotive</a>
-      <a href="/home/">Home</a>
-      <a href="/outdoor/">Outdoor</a>
-      <a href="/sports/">Sports</a>
-      <a href="/tools/">Tools</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Find the best products — without the BS</h1>
-    <p>Real reviews, honest comparisons, and straightforward recommendations. No fluff, no paid placements — just products we would actually use ourselves.</p>
-  </section>
-
-  <section class="latest">
-    <h2>Latest Reviews</h2>
-    <div class="latest-grid">
-      <div class="review-card">
-        <div class="category">Home</div>
-        <h3><a href="/home/best-robot-vacuums.html">Best Robot Vacuums</a></h3>
-        <p>Roomba, Roborock, Shark, Ecovacs — which ones actually clean and which ones just wander.</p>
-        <div class="updated">April 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="category">Automotive</div>
-        <h3><a href="/automotive/best-jeep-seat-covers.html">Best Jeep Seat Covers</a></h3>
-        <p>The real ones ranked by material, fit, and durability. Amazon alternatives included.</p>
-        <div class="updated">April 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="category">Tools</div>
-        <h3><a href="/tools/best-power-tools.html">Best Power Tools</a></h3>
-        <p>Milwaukee, DeWalt, Ryobi, Makita — home use ranked by real tool people.</p>
-        <div class="updated">April 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="category">Outdoor</div>
-        <h3><a href="/outdoor/best-portable-power-stations.html">Best Portable Power Stations</a></h3>
-        <p>Jackery, EcoFlow, Bluetti — which portable battery is worth the money.</p>
-        <div class="updated">April 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="category">Automotive</div>
-        <h3><a href="/automotive/best-bronco-seat-covers.html">Best Bronco Seat Covers</a></h3>
-        <p>Protection that matches how Bronco owners actually use their rigs.</p>
-        <div class="updated">April 2026</div>
-      </div>
-      <div class="review-card">
-        <div class="category">Sports</div>
-        <h3><a href="/sports/best-golf-gifts.html">Best Golf Gifts</a></h3>
-        <p>Funny, practical, and actually useful golf gifts that won't collect dust.</p>
-        <div class="updated">April 2026</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="categories">
-    <div class="card">
-      <h2>🚗 Automotive</h2>
-      <p>Seat covers, car accessories, and gear for Jeep, Bronco, trucks, and daily drivers. Real picks ranked by durability.</p>
-      <a href="/automotive/" class="cta">Browse automotive picks</a>
-    </div>
-    <div class="card">
-      <h2>🏠 Home</h2>
-      <p>Air purifiers, kitchen gadgets, home office gear, and HVAC filters. Practical picks for actual homes.</p>
-      <a href="/home/" class="cta">Browse home picks</a>
-    </div>
-    <div class="card">
-      <h2>🏕️ Outdoor</h2>
-      <p>Camping gear, overlanding accessories, and outdoor equipment that earns its space in the car.</p>
-      <a href="/outdoor/" class="cta">Browse outdoor picks</a>
-    </div>
-    <div class="card">
-      <h2>⛳ Sports</h2>
-      <p>Golf gifts, rangefinders, push carts, and novelty sporting goods. Funny and practical picks ranked.</p>
-      <a href="/sports/" class="cta">Browse sports picks</a>
-    </div>
-    <div class="card">
-      <h2>🔧 Tools</h2>
-      <p>Power tools, hand tools, and workshop essentials. Milwaukee, DeWalt, Ryobi, Makita ranked honestly.</p>
-      <a href="/tools/" class="cta">Browse tool picks</a>
-    </div>
-    <div class="card">
-      <h2>🏆 Best Sellers</h2>
-      <p>The most-read picks across all categories. Updated weekly based on what readers are actually looking at.</p>
-      <a href="/automotive/best-jeep-seat-covers.html" class="cta">See top picks</a>
-    </div>
-  </section>
-
-  <footer>
-    <p class="disclosure">Some links on this site are affiliate links. As an Amazon Associate, we earn from qualifying purchases. That does not change what we recommend — we only feature products we would actually use.</p>
-    <p>&copy; 2026 WhatAreBest.com. All rights reserved.</p>
-  </footer>
-
-<div class="network-links" style="background:#1a1a1a;padding:1.2rem;text-align:center;font-size:.82rem;color:#888;border-top:1px solid #333;">
-  <strong style="color:#ccc;">What Are Best Review Network:</strong>
-  <a href="https://whatarebest.com" style="color:#aaa;margin:0 .5rem;">What Are Best</a> ·
-  <a href="https://bestseatcover.com" style="color:#aaa;margin:0 .5rem;">Best Seat Covers</a> ·
-  <a href="https://jeepseatcover.com" style="color:#aaa;margin:0 .5rem;">Jeep Seat Covers</a> ·
-  <a href="https://bestbroncoaccessories.com" style="color:#aaa;margin:0 .5rem;">Bronco Accessories</a> ·
-  <a href="https://besttruckaccessories.com" style="color:#aaa;margin:0 .5rem;">Truck Accessories</a> ·
-  <a href="https://besttonneaucovers.com" style="color:#aaa;margin:0 .5rem;">Tonneau Covers</a> ·
-  <a href="https://petwearhouse.com" style="color:#aaa;margin:0 .5rem;">Pet Wearhouse</a> ·
-  <a href="https://bestfirestick.com" style="color:#aaa;margin:0 .5rem;">Best Firestick</a> ·
-  <a href="https://bestcordlesstools.com" style="color:#aaa;margin:0 .5rem;">Cordless Tools</a> ·
-  <a href="https://limitstraps.com" style="color:#aaa;margin:0 .5rem;">Limit Straps</a>
+<!-- HEADER -->
+<header class="site-header">
+<div class="container nav-inner">
+  <a href="/" class="logo">What Are <span>Best</span>?</a>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/best-seat-covers.html">Seat Covers</a></li>
+      <li><a href="/best-jeep-accessories.html">Jeep</a></li>
+      <li><a href="/best-truck-accessories.html">Trucks</a></li>
+      <li><a href="/best-hvac-filters.html">HVAC</a></li>
+      <li><a href="/best-pet-gear.html">Pets</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
 </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+  <h1>Honest Reviews for <em>Everything</em> That Matters</h1>
+  <p>We test, compare, and rank products across 16+ categories so you don't have to. No fluff. No paid placements. Just answers.</p>
+</div>
+</section>
+
+<!-- BROWSE BY CATEGORY -->
+<section class="section">
+<div class="container">
+  <h2 class="section-title">Browse by Category</h2>
+  <p class="section-subtitle">Tap a category to explore our expert picks and in-depth reviews</p>
+  <div class="cat-grid">
+
+    <div class="cat-card">
+      <span class="cat-icon">🚗</span>
+      <h3>Automotive</h3>
+      <p>Seat covers, accessories, and gear for trucks, Jeeps, Broncos, and more.</p>
+      <div class="cat-links">
+        <a href="https://tacticalseats.com" target="_blank">Tactical Seats</a>
+        <a href="https://bestseatcover.com" target="_blank">Seat Covers</a>
+        <a href="https://jeepseatcover.com" target="_blank">Jeep Covers</a>
+        <a href="https://bestbroncoaccessories.com" target="_blank">Bronco</a>
+        <a href="https://besttruckaccessories.com" target="_blank">Trucks</a>
+        <a href="https://bedtread.com" target="_blank">Bed Tread</a>
+      </div>
+    </div>
+
+    <div class="cat-card">
+      <span class="cat-icon">🏠</span>
+      <h3>Home &amp; HVAC</h3>
+      <p>Filters, organizers, and everything to keep your home running right.</p>
+      <div class="cat-links">
+        <a href="https://homehvacfilters.com" target="_blank">HVAC Filters</a>
+        <a href="https://bestgarageorganizer.com" target="_blank">Garage</a>
+      </div>
+    </div>
+
+    <div class="cat-card">
+      <span class="cat-icon">🍳</span>
+      <h3>Kitchen</h3>
+      <p>Instant Pots, smoker grills, and the gear that makes cooking easier.</p>
+      <div class="cat-links">
+        <a href="https://bestinstantpot.com" target="_blank">Instant Pots</a>
+        <a href="https://bestsmokergrill.com" target="_blank">Smoker Grills</a>
+      </div>
+    </div>
+
+    <div class="cat-card">
+      <span class="cat-icon">💻</span>
+      <h3>Tech</h3>
+      <p>Mesh WiFi, streaming devices, cordless tools — the tech that works.</p>
+      <div class="cat-links">
+        <a href="https://bestmeshwifi.com" target="_blank">Mesh WiFi</a>
+        <a href="https://bestfirestick.com" target="_blank">Fire Stick</a>
+        <a href="https://bestcordlesstools.com" target="_blank">Cordless Tools</a>
+      </div>
+    </div>
+
+    <div class="cat-card">
+      <span class="cat-icon">🐕</span>
+      <h3>Pets</h3>
+      <p>Gear, apparel, and accessories for your four-legged co-pilot.</p>
+      <div class="cat-links">
+        <a href="https://petwearhouse.com" target="_blank">Pet Wearhouse</a>
+      </div>
+    </div>
+
+    <div class="cat-card">
+      <span class="cat-icon">🏕️</span>
+      <h3>Outdoor</h3>
+      <p>Tonneau covers, limit straps, and off-road essentials.</p>
+      <div class="cat-links">
+        <a href="https://besttonneaucovers.com" target="_blank">Tonneau Covers</a>
+        <a href="https://limitstraps.com" target="_blank">Limit Straps</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- LATEST REVIEWS -->
+<section class="section section-alt">
+<div class="container">
+  <h2 class="section-title">Latest Reviews</h2>
+  <p class="section-subtitle">Our most recent deep dives and roundups</p>
+  <div class="review-grid">
+
+    <a href="/best-seat-covers.html" class="review-card" style="text-decoration:none;color:inherit;">
+      <div class="review-card-img" style="background:linear-gradient(135deg,#CCFBF1,#F0FDFA);">🪑</div>
+      <div class="review-card-body">
+        <span class="badge">Updated April 2026</span>
+        <h3>Best Seat Covers — Every Vehicle, Every Budget</h3>
+        <p>We tested 14 brands across neoprene, tactical, and leather options. Here's what actually holds up.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </a>
+
+    <a href="/best-jeep-accessories.html" class="review-card" style="text-decoration:none;color:inherit;">
+      <div class="review-card-img" style="background:linear-gradient(135deg,#FEF3C7,#FFFBEB);">🛞</div>
+      <div class="review-card-body">
+        <span class="badge">Updated April 2026</span>
+        <h3>Best Jeep Accessories — Wrangler &amp; Gladiator</h3>
+        <p>Grab handles, door bags, seat covers, and storage solutions ranked by real Jeep owners.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </a>
+
+    <a href="/best-truck-accessories.html" class="review-card" style="text-decoration:none;color:inherit;">
+      <div class="review-card-img" style="background:linear-gradient(135deg,#E0E7FF,#EEF2FF);">🛻</div>
+      <div class="review-card-body">
+        <span class="badge">Updated April 2026</span>
+        <h3>Best Truck Accessories for 2026</h3>
+        <p>Tonneau covers, bed liners, grab handles, and more — tested on F-150s, Tacomas, and Rams.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </a>
+
+    <a href="/best-hvac-filters.html" class="review-card" style="text-decoration:none;color:inherit;">
+      <div class="review-card-img" style="background:linear-gradient(135deg,#DBEAFE,#EFF6FF);">🌬️</div>
+      <div class="review-card-body">
+        <span class="badge">Updated April 2026</span>
+        <h3>Best HVAC Filters — Breathe Easier</h3>
+        <p>MERV ratings explained, top 5 picks tested, and the premium option most people miss.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </a>
+
+    <a href="/best-pet-gear.html" class="review-card" style="text-decoration:none;color:inherit;">
+      <div class="review-card-img" style="background:linear-gradient(135deg,#FCE7F3,#FDF2F8);">🐾</div>
+      <div class="review-card-body">
+        <span class="badge">New</span>
+        <h3>Best Pet Gear for Trucks &amp; SUVs</h3>
+        <p>Harnesses, barriers, and seat protectors that keep your dog safe on every ride.</p>
+        <span class="read-more">Read review →</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+</section>
+
+<!-- OUR NETWORK -->
+<section class="section">
+<div class="container">
+  <h2 class="section-title">Our Network</h2>
+  <p class="section-subtitle">16 specialized review sites, one trusted network</p>
+  <div class="network-grid">
+    <a href="https://tacticalseats.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Tactical Seats</h4><p>Tactical &amp; military-grade seat covers</p>
+    </a>
+    <a href="https://bestseatcover.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Best Seat Cover</h4><p>Universal seat cover reviews</p>
+    </a>
+    <a href="https://jeepseatcover.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Jeep Seat Cover</h4><p>Wrangler &amp; Gladiator covers</p>
+    </a>
+    <a href="https://bestbroncoaccessories.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Bronco Accessories</h4><p>Ford Bronco gear &amp; mods</p>
+    </a>
+    <a href="https://besttruckaccessories.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Truck Accessories</h4><p>F-150, Tacoma, Ram upgrades</p>
+    </a>
+    <a href="https://bedtread.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Bed Tread</h4><p>Truck bed protection</p>
+    </a>
+    <a href="https://homehvacfilters.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Home HVAC Filters</h4><p>Air filter reviews &amp; guides</p>
+    </a>
+    <a href="https://bestgarageorganizer.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Garage Organizer</h4><p>Storage &amp; organization</p>
+    </a>
+    <a href="https://bestinstantpot.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Best Instant Pot</h4><p>Pressure cooker roundups</p>
+    </a>
+    <a href="https://bestsmokergrill.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Smoker Grill</h4><p>Smokers, pellet grills, charcoal</p>
+    </a>
+    <a href="https://bestmeshwifi.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Best Mesh WiFi</h4><p>Whole-home WiFi systems</p>
+    </a>
+    <a href="https://bestfirestick.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Best Fire Stick</h4><p>Streaming device reviews</p>
+    </a>
+    <a href="https://bestcordlesstools.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Cordless Tools</h4><p>DeWalt, Milwaukee, Makita</p>
+    </a>
+    <a href="https://petwearhouse.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Pet Wearhouse</h4><p>Pet gear &amp; apparel</p>
+    </a>
+    <a href="https://besttonneaucovers.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Tonneau Covers</h4><p>Truck bed cover reviews</p>
+    </a>
+    <a href="https://limitstraps.com" target="_blank" class="network-card" style="text-decoration:none;color:inherit;">
+      <h4>Limit Straps</h4><p>Off-road suspension straps</p>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+<div class="container">
+  <h2>Stay in the Loop</h2>
+  <p>Get our latest reviews and buying guides delivered to your inbox. No spam, ever.</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault();this.innerHTML='<p style=\'color:white;font-weight:700;\'>Thanks! You\'re on the list.</p>';">
+    <input type="email" placeholder="you@email.com" required aria-label="Email address">
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="color:white;">What Are <span style="color:var(--teal);">Best</span>?</div>
+      <p>An independent review network dedicated to helping you find the best products across every category. We test, compare, and rank — so you can buy with confidence.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Reviews</h4>
+      <ul>
+        <li><a href="/best-seat-covers.html">Seat Covers</a></li>
+        <li><a href="/best-jeep-accessories.html">Jeep Accessories</a></li>
+        <li><a href="/best-truck-accessories.html">Truck Accessories</a></li>
+        <li><a href="/best-hvac-filters.html">HVAC Filters</a></li>
+        <li><a href="/best-pet-gear.html">Pet Gear</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Network</h4>
+      <ul>
+        <li><a href="https://tacticalseats.com" target="_blank">Tactical Seats</a></li>
+        <li><a href="https://bestseatcover.com" target="_blank">Best Seat Cover</a></li>
+        <li><a href="https://besttruckaccessories.com" target="_blank">Truck Accessories</a></li>
+        <li><a href="https://homehvacfilters.com" target="_blank">HVAC Filters</a></li>
+        <li><a href="https://petwearhouse.com" target="_blank">Pet Wearhouse</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/about.html#disclosure">Affiliate Disclosure</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 What Are Best. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://youtube.com/@whatarebestpicks" target="_blank" aria-label="YouTube">▶ YouTube</a>
+      <a href="https://pinterest.com/whatarebest" target="_blank" aria-label="Pinterest">📌 Pinterest</a>
+    </div>
+  </div>
+</div>
+</footer>
+
 </body>
 </html>
