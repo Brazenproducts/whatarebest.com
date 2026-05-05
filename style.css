@@ -78,20 +78,19 @@ a:hover { color: var(--teal-dark); }
   padding: 80px 0 60px;
   text-align: center;
 }
-.hero h1, .hero p { color: var(--white); text-shadow: 0 2px 10px rgba(0,0,0,0.28); }
-.hero h1 em { color: #8ff4de; }
+.hero h1, .hero p { color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.4); }
 .hero h1 {
   font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
-  color: var(--gray-900);
+  color: #ffffff;
 }
-.hero h1 em { font-style: normal; color: var(--teal); }
+.hero h1 em { font-style: normal; color: #8ff4de; }
 .hero p {
   font-size: 1.2rem;
-  color: var(--gray-500);
+  color: #f0f0f0;
   max-width: 600px;
   margin: 0 auto 32px;
 }
