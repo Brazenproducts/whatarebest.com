@@ -1,352 +1,2773 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Network Dashboard | What Are Best</title>
-  <meta name="description" content="Track all affiliate network sites, deployment status, templates, and indexing status in one place.">
-  <link rel="canonical" href="https://whatarebest.com/network-dashboard.html">
-  <meta property="og:title" content="Network Dashboard | What Are Best">
-  <meta property="og:description" content="Track all affiliate network sites, deployment status, templates, and indexing status in one place.">
-  <meta property="og:url" content="https://whatarebest.com/network-dashboard.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="What Are Best">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --bg:#f8f9fa; --card:#fff; --text:#1f2937; --muted:#6b7280; --teal:#0d9488; --amber:#f59e0b; --border:#e5e7eb; --ok:#16a34a; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:'Nunito Sans',sans-serif; background:var(--bg); color:var(--text); }
-    .wrap { max-width:1200px; margin:0 auto; padding:32px 20px 64px; }
-    h1,h2 { font-family:'Playfair Display',serif; margin:0 0 12px; }
-    h1 { font-size:48px; }
-    p { color:var(--muted); line-height:1.6; }
-    .hero { background:linear-gradient(135deg,#ffffff,#eef7f6); border:1px solid var(--border); border-radius:20px; padding:32px; margin-bottom:28px; }
-    .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; margin-top:24px; }
-    .stat { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; }
-    .stat strong { display:block; font-size:30px; color:var(--teal); }
-    table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:18px; overflow:hidden; }
-    th,td { padding:14px 12px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
-    th { background:#f1f5f9; font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:#475569; }
-    tr:last-child td { border-bottom:none; }
-    a { color:var(--teal); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .pill { display:inline-block; padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700; }
-    .live { background:#dcfce7; color:#166534; }
-    .building { background:#fef3c7; color:#92400e; }
-    .template { background:#e0f2fe; color:#075985; }
-    .note { margin-top:20px; font-size:14px; }
-    @media (max-width: 900px) { h1{font-size:36px;} table{display:block; overflow-x:auto;} }
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Network Dashboard","url":"https://whatarebest.com/network-dashboard.html"}</script>
+<title>Axl Affiliate Network — All Sites</title>
 <style>
-/* === VISUAL OVERHAUL ENHANCEMENTS === */
-html{scroll-behavior:smooth}
-.hero{background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1400&q=80') center/cover no-repeat!important;min-height:400px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff!important;position:relative}
-.hero *{color:#fff!important}
-.hero h1,.hero h2{text-shadow:0 2px 8px rgba(0,0,0,.4)}
-.hero p{text-shadow:0 1px 4px rgba(0,0,0,.3)}
-.stars{color:#F59E0B;font-size:1rem;letter-spacing:1px;margin-bottom:4px}
-.stars .count{color:#64748b;font-size:.8rem;margin-left:4px;letter-spacing:0}
-.pick-badge{display:inline-block;background:linear-gradient(135deg,#E8600A,#F59E0B);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
-.card,.cd{transition:transform .2s,box-shadow .2s!important}
-.card:hover,.cd:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.12)!important}
-.updated-badge{display:inline-block;background:#ECFDF5;color:#065F46;padding:4px 12px;border-radius:20px;font-size:.78rem;font-weight:600;margin:8px 0}
-.back-to-top{position:fixed;bottom:24px;right:24px;background:#2563EB;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;text-decoration:none!important;box-shadow:0 4px 12px rgba(37,99,235,.4);opacity:0;transition:opacity .3s;z-index:999}
-.back-to-top.visible{opacity:1}
-header,nav{transition:box-shadow .3s}
-header.scrolled,nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.1)!important}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;text-align:left;margin-bottom:24px}
-.footer-col h4{font-size:.9rem;margin-bottom:12px;opacity:.9}
-.footer-col a{display:block;color:#94A3B8;font-size:.85rem;margin-bottom:6px;text-decoration:none}
-.footer-col a:hover{color:#fff}
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--text:#e2e8f0;--muted:#94a3b8;--teal:#14b8a6;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--blue:#3b82f6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.wrap{max-width:1400px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:6px}
+.subtitle{color:var(--muted);margin-bottom:28px;font-size:1rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:32px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.stat strong{display:block;font-size:2rem;font-weight:800;color:var(--teal)}
+.stat span{font-size:.85rem;color:var(--muted)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.filter-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);padding:6px 14px;border-radius:999px;cursor:pointer;font-size:.85rem;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.search-box{background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 16px;border-radius:10px;font-size:.95rem;width:300px;margin-bottom:18px}
+.search-box::placeholder{color:var(--muted)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;font-size:.9rem}
+th{background:#0f172a;padding:12px 14px;text-align:left;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:1px solid var(--border)}
+td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.03)}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:.75rem;font-weight:700}
+.live{background:#14532d;color:#86efac}
+.building{background:#1e3a5f;color:#93c5fd}
+.template{background:#292524;color:#d6d3d1}
+.new-badge{background:#7c3aed;color:#e9d5ff;margin-left:6px}
+.num{color:var(--muted);font-size:.8rem}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
-      <h1>Affiliate Network Dashboard</h1>
-      <p>Single-page tracker for every active and in-progress review site in the network. Use this as the live source of truth for launches, templates, indexing, and niche coverage.</p>
-      <div class="stats">
-        <div class="stat"><strong>9</strong><span>New Sites Built</span></div>
-        <div class="stat"><strong>4</strong><span>Template Families Live</span></div>
-        <div class="stat"><strong>9</strong><span>IndexNow Submitted</span></div>
-        <div class="stat"><strong>1</strong><span>Hub Site</span></div>
-      </div>
-    </section>
+<div class="wrap">
+  <h1>🎸 Axl Affiliate Network</h1>
+  <p class="subtitle">All sites — newest first. Last updated: May 16, 2026</p>
 
-    <h2>Current Build Status</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Site</th>
-          <th>Niche</th>
-          <th>Status</th>
-          <th>Template</th>
-          <th>Pages</th>
-          <th>Affiliate Mix</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="https://whatarebest.com">whatarebest.com</a></td>
-          <td>Hub / catch-all</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">Hub Editorial</span></td>
-          <td>7</td>
-          <td>Amazon + network referrals</td>
-          <td>Moved off Wix. Central authority site for all spokes.</td>
-        </tr>
-        <tr>
-          <td><a href="https://tacticalseats.com">tacticalseats.com</a></td>
-          <td>Tactical / seat covers</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T1 Clean</span></td>
-          <td>6</td>
-          <td>Bartact + Amazon</td>
-          <td>Bartact positioned as #1. Needs remaining schema pass later.</td>
-        </tr>
-        <tr>
-          <td><a href="https://homehvacfilters.com">homehvacfilters.com</a></td>
-          <td>HVAC / home air</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T2 Magazine</span></td>
-          <td>7</td>
-          <td>Amazon + BowTie</td>
-          <td>Strong SEO build with structured data already present.</td>
-        </tr>
-        <tr>
-          <td><a href="https://tacticalseatcovers.com">tacticalseatcovers.com</a></td>
-          <td>Tactical / MOLLE</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T3 Dark</span></td>
-          <td>5</td>
-          <td>Bartact + Amazon</td>
-          <td>Dark theme variant for network diversity.</td>
-        </tr>
-        <tr>
-          <td><a href="https://tacomaseats.com">tacomaseats.com</a></td>
-          <td>Tacoma seats</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T2 Magazine Red</span></td>
-          <td>5</td>
-          <td>Bartact + Amazon</td>
-          <td>Tacoma-specific deep dive site.</td>
-        </tr>
-        <tr>
-          <td><a href="https://bestwindshieldwiper.com">bestwindshieldwiper.com</a></td>
-          <td>Wipers</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T4 Comparison</span></td>
-          <td>6</td>
-          <td>Amazon + Switchblade</td>
-          <td>Comparison-table driven layout.</td>
-        </tr>
-        <tr>
-          <td><a href="https://kitchenfireextinguisher.com">kitchenfireextinguisher.com</a></td>
-          <td>Fire safety</td>
-          <td><span class="pill live">Live</span></td>
-          <td><span class="pill template">T1 Clean Red</span></td>
-          <td>6</td>
-          <td>Amazon</td>
-          <td>Safety-focused affiliate site with extinguisher and fire blanket guides.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p class="note">Next wave candidates: bigrigseatcovers.com, bedtread.com, autoextinguishers.com, besthvacfilter.com, filtersubscriptions.com, molleattachments.com.</p>
+  <div class="stats">
+    <div class="stat"><strong>382</strong><span>Total Sites</span></div>
+    <div class="stat"><strong>354</strong><span>Monetized</span></div>
+    <div class="stat"><strong>382</strong><span>Built This Week</span></div>
+    <div class="stat"><strong>92</strong><span>Automotive</span></div>
+    <div class="stat"><strong>62</strong><span>HVAC/Filters</span></div>
+    <div class="stat"><strong>22</strong><span>Kitchen/Electronics</span></div>
   </div>
 
+  <input class="search-box" type="text" id="search" placeholder="Search domains..." onkeyup="filterTable()">
+
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterCat('all',this)">All (382)</button>
+    <button class="filter-btn" onclick="filterCat('Automotive',this)">Automotive (92)</button>
+    <button class="filter-btn" onclick="filterCat('HVAC/Filters',this)">HVAC/Filters (62)</button>
+    <button class="filter-btn" onclick="filterCat('Kitchen',this)">Kitchen (9)</button>
+    <button class="filter-btn" onclick="filterCat('Electronics/Health',this)">Electronics (13)</button>
+    <button class="filter-btn" onclick="filterCat('Tools',this)">Tools (9)</button>
+    <button class="filter-btn" onclick="filterCat('Firewood',this)">Firewood (19)</button>
+    <button class="filter-btn" onclick="filterCat('SkipATip',this)">SkipATip (10)</button>
+    <button class="filter-btn" onclick="filterCat('BlockchainABCs',this)">BlockchainABCs (9)</button>
+    <button class="filter-btn" onclick="filterCat('Other',this)">Other (151)</button>
+  </div>
+
+  <table id="siteTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Domain</th>
+        <th>Category</th>
+        <th>Amazon</th>
+        <th>Last Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr>
+      <td>1</td>
+      <td><a href="https://18wheelergear.com" target="_blank">18wheelergear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>2</td>
+      <td><a href="https://18wheelgear.com" target="_blank">18wheelgear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>3</td>
+      <td><a href="https://4x4king.com" target="_blank">4x4king.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>4</td>
+      <td><a href="https://4x4stomper.com" target="_blank">4x4stomper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>5</td>
+      <td><a href="https://4x4stompers.com" target="_blank">4x4stompers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>6</td>
+      <td><a href="https://accordionfilter.com" target="_blank">accordionfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>7</td>
+      <td><a href="https://airfilterforpets-com" target="_blank">airfilterforpets-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>8</td>
+      <td><a href="https://allbrandsdirect.com" target="_blank">allbrandsdirect.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>9</td>
+      <td><a href="https://allergenairfilter-com" target="_blank">allergenairfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>10</td>
+      <td><a href="https://altitudeparts.com" target="_blank">altitudeparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>11</td>
+      <td><a href="https://americapartygoods.com" target="_blank">americapartygoods.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>12</td>
+      <td><a href="https://americapartyproducts.com" target="_blank">americapartyproducts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>13</td>
+      <td><a href="https://americapartysupply.com" target="_blank">americapartysupply.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>14</td>
+      <td><a href="https://amerikantool.com" target="_blank">amerikantool.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>15</td>
+      <td><a href="https://amishfirewood.com" target="_blank">amishfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>16</td>
+      <td><a href="https://amishhardwood.com" target="_blank">amishhardwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>17</td>
+      <td><a href="https://amishlandfirewood.com" target="_blank">amishlandfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>18</td>
+      <td><a href="https://amishlandhardwood.com" target="_blank">amishlandhardwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>19</td>
+      <td><a href="https://amishlandwood.com" target="_blank">amishlandwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>20</td>
+      <td><a href="https://andesvirusfilter.com" target="_blank">andesvirusfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>21</td>
+      <td><a href="https://andesvirusmask.com" target="_blank">andesvirusmask.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>22</td>
+      <td><a href="https://andesvirusmasks.com" target="_blank">andesvirusmasks.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>23</td>
+      <td><a href="https://andesvirusoutbreak.com" target="_blank">andesvirusoutbreak.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>24</td>
+      <td><a href="https://andesvirustransmission.com" target="_blank">andesvirustransmission.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>25</td>
+      <td><a href="https://andesvirustreatment.com" target="_blank">andesvirustreatment.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>26</td>
+      <td><a href="https://appalachianfirewood.com" target="_blank">appalachianfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>27</td>
+      <td><a href="https://autopartsreviewed-com" target="_blank">autopartsreviewed-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>28</td>
+      <td><a href="https://autopartstorenearme.com" target="_blank">autopartstorenearme.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>29</td>
+      <td><a href="https://autoshipfilter-com" target="_blank">autoshipfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>30</td>
+      <td><a href="https://autoshipfilter.com" target="_blank">autoshipfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>31</td>
+      <td><a href="https://barkstrap.com" target="_blank">barkstrap.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>32</td>
+      <td><a href="https://batheater.com" target="_blank">batheater.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>33</td>
+      <td><a href="https://batheaters.com" target="_blank">batheaters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>34</td>
+      <td><a href="https://bedtread.com" target="_blank">bedtread.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>35</td>
+      <td><a href="https://bestbaseballmitts.com" target="_blank">bestbaseballmitts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>36</td>
+      <td><a href="https://bestbattinggloves.com" target="_blank">bestbattinggloves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>37</td>
+      <td><a href="https://bestblockchainapp.com" target="_blank">bestblockchainapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>38</td>
+      <td><a href="https://bestcarwashkit.com" target="_blank">bestcarwashkit.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>39</td>
+      <td><a href="https://bestcarwashkits.com" target="_blank">bestcarwashkits.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>40</td>
+      <td><a href="https://bestcompactlaser.com" target="_blank">bestcompactlaser.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>41</td>
+      <td><a href="https://bestcryptocurrencyapp.com" target="_blank">bestcryptocurrencyapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>42</td>
+      <td><a href="https://bestdetailingkit.com" target="_blank">bestdetailingkit.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>43</td>
+      <td><a href="https://bestdiningapp.com" target="_blank">bestdiningapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>44</td>
+      <td><a href="https://bestdiningapps.com" target="_blank">bestdiningapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>45</td>
+      <td><a href="https://bestdutchoven.com" target="_blank">bestdutchoven.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>46</td>
+      <td><a href="https://bestfiltering.com" target="_blank">bestfiltering.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>47</td>
+      <td><a href="https://bestfoodapps.com" target="_blank">bestfoodapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>48</td>
+      <td><a href="https://bestgaming-chair.com" target="_blank">bestgaming-chair.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>49</td>
+      <td><a href="https://bestgarageheater.com" target="_blank">bestgarageheater.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>50</td>
+      <td><a href="https://besthardfirewood.com" target="_blank">besthardfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>51</td>
+      <td><a href="https://bestheadlightrestoration.com" target="_blank">bestheadlightrestoration.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>52</td>
+      <td><a href="https://bestheating-pad.com" target="_blank">bestheating-pad.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>53</td>
+      <td><a href="https://besthomefilter-com" target="_blank">besthomefilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>54</td>
+      <td><a href="https://besthomefilter.com" target="_blank">besthomefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>55</td>
+      <td><a href="https://besthomefilters.com" target="_blank">besthomefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>56</td>
+      <td><a href="https://besthousefilter.com" target="_blank">besthousefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>57</td>
+      <td><a href="https://besthousefilters.com" target="_blank">besthousefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>58</td>
+      <td><a href="https://besthvacfilter-com" target="_blank">besthvacfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>59</td>
+      <td><a href="https://besthvacfilter.com" target="_blank">besthvacfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>60</td>
+      <td><a href="https://bestice-maker.com" target="_blank">bestice-maker.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>61</td>
+      <td><a href="https://bestlabel-maker.com" target="_blank">bestlabel-maker.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>62</td>
+      <td><a href="https://bestlearningapp.com" target="_blank">bestlearningapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>63</td>
+      <td><a href="https://bestledlightbars.com" target="_blank">bestledlightbars.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>64</td>
+      <td><a href="https://bestmagnesiumglycinate.com" target="_blank">bestmagnesiumglycinate.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>65</td>
+      <td><a href="https://bestmassage-gun.com" target="_blank">bestmassage-gun.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>66</td>
+      <td><a href="https://bestmini-fridge.com" target="_blank">bestmini-fridge.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>67</td>
+      <td><a href="https://bestnecklifttape.com" target="_blank">bestnecklifttape.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>68</td>
+      <td><a href="https://bestnewmobileapps.com" target="_blank">bestnewmobileapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>69</td>
+      <td><a href="https://bestofficefilter-com" target="_blank">bestofficefilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>70</td>
+      <td><a href="https://bestofficefilter.com" target="_blank">bestofficefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>71</td>
+      <td><a href="https://bestofficefilters.com" target="_blank">bestofficefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>72</td>
+      <td><a href="https://bestoffroadbrands-com" target="_blank">bestoffroadbrands-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>73</td>
+      <td><a href="https://bestorbitalsandpaper.com" target="_blank">bestorbitalsandpaper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>74</td>
+      <td><a href="https://bestpastamaker.com" target="_blank">bestpastamaker.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>75</td>
+      <td><a href="https://bestportable-ac.com" target="_blank">bestportable-ac.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>76</td>
+      <td><a href="https://bestportable-charger.com" target="_blank">bestportable-charger.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>77</td>
+      <td><a href="https://bestportableacs.com" target="_blank">bestportableacs.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>78</td>
+      <td><a href="https://bestpower-bank.com" target="_blank">bestpower-bank.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>79</td>
+      <td><a href="https://bestprotein-powder.com" target="_blank">bestprotein-powder.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>80</td>
+      <td><a href="https://bestreciprocatingsaw.com" target="_blank">bestreciprocatingsaw.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>81</td>
+      <td><a href="https://bestrecoverykit.com" target="_blank">bestrecoverykit.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>82</td>
+      <td><a href="https://bestresistance-bands.com" target="_blank">bestresistance-bands.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>83</td>
+      <td><a href="https://bestrestaurantapp.com" target="_blank">bestrestaurantapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>84</td>
+      <td><a href="https://bestrestaurantapps.com" target="_blank">bestrestaurantapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>85</td>
+      <td><a href="https://bestshower-head.com" target="_blank">bestshower-head.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>86</td>
+      <td><a href="https://bestsolar-lights.com" target="_blank">bestsolar-lights.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>87</td>
+      <td><a href="https://bestsousvide.com" target="_blank">bestsousvide.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>88</td>
+      <td><a href="https://beststandmixer.com" target="_blank">beststandmixer.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>89</td>
+      <td><a href="https://besttipfreeapps.com" target="_blank">besttipfreeapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>90</td>
+      <td><a href="https://besttireinflator.com" target="_blank">besttireinflator.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>91</td>
+      <td><a href="https://besttirepatch.com" target="_blank">besttirepatch.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>92</td>
+      <td><a href="https://besttowingstrap.com" target="_blank">besttowingstrap.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>93</td>
+      <td><a href="https://besttruckfloorliner.com" target="_blank">besttruckfloorliner.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>94</td>
+      <td><a href="https://besttrucktopper.com" target="_blank">besttrucktopper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>95</td>
+      <td><a href="https://bestvibrationplate.com" target="_blank">bestvibrationplate.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>96</td>
+      <td><a href="https://bestwaterfilterpitcher.com" target="_blank">bestwaterfilterpitcher.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>97</td>
+      <td><a href="https://bestwindshieldwiper-com" target="_blank">bestwindshieldwiper-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Wipers</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>98</td>
+      <td><a href="https://bestzeroturnmower.com" target="_blank">bestzeroturnmower.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>99</td>
+      <td><a href="https://bigrigcovers.com" target="_blank">bigrigcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>100</td>
+      <td><a href="https://bigrigseatcovers.com" target="_blank">bigrigseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>101</td>
+      <td><a href="https://bloxfilter.com" target="_blank">bloxfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>102</td>
+      <td><a href="https://bowtiefilter.com" target="_blank">bowtiefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>103</td>
+      <td><a href="https://boxohardfirewood.com" target="_blank">boxohardfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>104</td>
+      <td><a href="https://boxowood.com" target="_blank">boxowood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>105</td>
+      <td><a href="https://bronco2026.com" target="_blank">bronco2026.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>106</td>
+      <td><a href="https://broncobimini.com" target="_blank">broncobimini.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>107</td>
+      <td><a href="https://broncocage.com" target="_blank">broncocage.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>108</td>
+      <td><a href="https://broncograbhandles.com" target="_blank">broncograbhandles.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>109</td>
+      <td><a href="https://broncohandles.com" target="_blank">broncohandles.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>110</td>
+      <td><a href="https://broncoheadliners.com" target="_blank">broncoheadliners.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>111</td>
+      <td><a href="https://broncorollbars.com" target="_blank">broncorollbars.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>112</td>
+      <td><a href="https://broncoseat.com" target="_blank">broncoseat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>113</td>
+      <td><a href="https://broncoshades.com" target="_blank">broncoshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>114</td>
+      <td><a href="https://cabrettaleather.com" target="_blank">cabrettaleather.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>115</td>
+      <td><a href="https://cabrettaleathergloves.com" target="_blank">cabrettaleathergloves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>116</td>
+      <td><a href="https://canamaccessories.com" target="_blank">canamaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>117</td>
+      <td><a href="https://commanderseats.com" target="_blank">commanderseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>118</td>
+      <td><a href="https://commanderupgrades.com" target="_blank">commanderupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>119</td>
+      <td><a href="https://commercialhvacfilter.com" target="_blank">commercialhvacfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>120</td>
+      <td><a href="https://commercialhvacfilters.com" target="_blank">commercialhvacfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>121</td>
+      <td><a href="https://commercialprefilter.com" target="_blank">commercialprefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>122</td>
+      <td><a href="https://commercialprefilters.com" target="_blank">commercialprefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>123</td>
+      <td><a href="https://cushionmasters.com" target="_blank">cushionmasters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>124</td>
+      <td><a href="https://cybertruckbumper.com" target="_blank">cybertruckbumper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>125</td>
+      <td><a href="https://cybertruckseatcover.com" target="_blank">cybertruckseatcover.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>126</td>
+      <td><a href="https://cybertruckseats.com" target="_blank">cybertruckseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>127</td>
+      <td><a href="https://devilspitwood.com" target="_blank">devilspitwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>128</td>
+      <td><a href="https://diablowood.com" target="_blank">diablowood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>129</td>
+      <td><a href="https://directpartsource.com" target="_blank">directpartsource.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>130</td>
+      <td><a href="https://directpartssource.com" target="_blank">directpartssource.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>131</td>
+      <td><a href="https://dragonfirewood.com" target="_blank">dragonfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>132</td>
+      <td><a href="https://dragonsbreathwood.com" target="_blank">dragonsbreathwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>133</td>
+      <td><a href="https://dryvmotorsports.com" target="_blank">dryvmotorsports.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>134</td>
+      <td><a href="https://electricvehicleupgrades.com" target="_blank">electricvehicleupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>135</td>
+      <td><a href="https://evautosupply.com" target="_blank">evautosupply.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>136</td>
+      <td><a href="https://evupfitter.com" target="_blank">evupfitter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>137</td>
+      <td><a href="https://exteriormolle.com" target="_blank">exteriormolle.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>138</td>
+      <td><a href="https://extinguisherparts.com" target="_blank">extinguisherparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>139</td>
+      <td><a href="https://extinguishersales.com" target="_blank">extinguishersales.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>140</td>
+      <td><a href="https://factorfilters.com" target="_blank">factorfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>141</td>
+      <td><a href="https://fatfirewood.com" target="_blank">fatfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>142</td>
+      <td><a href="https://fatwoodfirewood.com" target="_blank">fatwoodfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>143</td>
+      <td><a href="https://filterblox.com" target="_blank">filterblox.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>144</td>
+      <td><a href="https://filterindustrial.com" target="_blank">filterindustrial.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>145</td>
+      <td><a href="https://filterpurchase.com" target="_blank">filterpurchase.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>146</td>
+      <td><a href="https://filtersizes-com" target="_blank">filtersizes-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>147</td>
+      <td><a href="https://filtersubscriptions.com" target="_blank">filtersubscriptions.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>148</td>
+      <td><a href="https://flatlinefilters.com" target="_blank">flatlinefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>149</td>
+      <td><a href="https://fordbroncoshade.com" target="_blank">fordbroncoshade.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>150</td>
+      <td><a href="https://fordbroncoshades.com" target="_blank">fordbroncoshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>151</td>
+      <td><a href="https://fungolfbag.com" target="_blank">fungolfbag.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>152</td>
+      <td><a href="https://fungolfsack.com" target="_blank">fungolfsack.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>153</td>
+      <td><a href="https://funnygolfgear.com" target="_blank">funnygolfgear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>154</td>
+      <td><a href="https://funnygolfgift.com" target="_blank">funnygolfgift.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>155</td>
+      <td><a href="https://funnygolfsack.com" target="_blank">funnygolfsack.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>156</td>
+      <td><a href="https://furnacefilterguys-com" target="_blank">furnacefilterguys-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>157</td>
+      <td><a href="https://furnaceprefilter-com" target="_blank">furnaceprefilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>158</td>
+      <td><a href="https://furnaceprefilter.com" target="_blank">furnaceprefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>159</td>
+      <td><a href="https://furnaceprefilters.com" target="_blank">furnaceprefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>160</td>
+      <td><a href="https://gladiatorgrabhandle.com" target="_blank">gladiatorgrabhandle.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>161</td>
+      <td><a href="https://gladiatorjeepclub.com" target="_blank">gladiatorjeepclub.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>162</td>
+      <td><a href="https://gladiatorseat.com" target="_blank">gladiatorseat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>163</td>
+      <td><a href="https://gladiatorshade.com" target="_blank">gladiatorshade.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>164</td>
+      <td><a href="https://gladiatorshades.com" target="_blank">gladiatorshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>165</td>
+      <td><a href="https://guardiansballclub.com" target="_blank">guardiansballclub.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>166</td>
+      <td><a href="https://hardwarestrap.com" target="_blank">hardwarestrap.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>167</td>
+      <td><a href="https://hellfirewood.com" target="_blank">hellfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>168</td>
+      <td><a href="https://homehvacfilters-com" target="_blank">homehvacfilters-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>169</td>
+      <td><a href="https://homeprefilter.com" target="_blank">homeprefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>170</td>
+      <td><a href="https://homeprefilters.com" target="_blank">homeprefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>171</td>
+      <td><a href="https://hspseats.com" target="_blank">hspseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>172</td>
+      <td><a href="https://huntersafetyproducts.com" target="_blank">huntersafetyproducts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>173</td>
+      <td><a href="https://hvacfilterguide-com" target="_blank">hvacfilterguide-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>174</td>
+      <td><a href="https://hvacfiltersizes-com" target="_blank">hvacfiltersizes-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>175</td>
+      <td><a href="https://hvachomefilters-com" target="_blank">hvachomefilters-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>176</td>
+      <td><a href="https://hvachomefilters.com" target="_blank">hvachomefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>177</td>
+      <td><a href="https://hvacprefilter.com" target="_blank">hvacprefilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>178</td>
+      <td><a href="https://hvacprefilters.com" target="_blank">hvacprefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>179</td>
+      <td><a href="https://ifrapparel.com" target="_blank">ifrapparel.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>180</td>
+      <td><a href="https://ifrclothing.com" target="_blank">ifrclothing.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>181</td>
+      <td><a href="https://ifrgear.com" target="_blank">ifrgear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>182</td>
+      <td><a href="https://insectstrip.com" target="_blank">insectstrip.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>183</td>
+      <td><a href="https://insectstrips.com" target="_blank">insectstrips.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>184</td>
+      <td><a href="https://jackpallet.com" target="_blank">jackpallet.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>185</td>
+      <td><a href="https://jeepaltitude.com" target="_blank">jeepaltitude.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>186</td>
+      <td><a href="https://jeepbenchcovers.com" target="_blank">jeepbenchcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>187</td>
+      <td><a href="https://jeepjt.com" target="_blank">jeepjt.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>188</td>
+      <td><a href="https://jeeprollbar.com" target="_blank">jeeprollbar.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>189</td>
+      <td><a href="https://jeepshades.com" target="_blank">jeepshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>190</td>
+      <td><a href="https://jeepwranglerjm.com" target="_blank">jeepwranglerjm.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>191</td>
+      <td><a href="https://jkrollbar.com" target="_blank">jkrollbar.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>192</td>
+      <td><a href="https://jkseatcovers.com" target="_blank">jkseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>193</td>
+      <td><a href="https://jlcovers.com" target="_blank">jlcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>194</td>
+      <td><a href="https://jlscrambler.com" target="_blank">jlscrambler.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>195</td>
+      <td><a href="https://jlseatcover.com" target="_blank">jlseatcover.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>196</td>
+      <td><a href="https://jlseats.com" target="_blank">jlseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>197</td>
+      <td><a href="https://jlshades.com" target="_blank">jlshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>198</td>
+      <td><a href="https://jluseatcovers.com" target="_blank">jluseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>199</td>
+      <td><a href="https://jlutops.com" target="_blank">jlutops.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>200</td>
+      <td><a href="https://jlutruck.com" target="_blank">jlutruck.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>201</td>
+      <td><a href="https://jmuparts.com" target="_blank">jmuparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>202</td>
+      <td><a href="https://jtseatcovers.com" target="_blank">jtseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>203</td>
+      <td><a href="https://jtseats.com" target="_blank">jtseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>204</td>
+      <td><a href="https://jttops.com" target="_blank">jttops.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>205</td>
+      <td><a href="https://kawasakiridgeutv.com" target="_blank">kawasakiridgeutv.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>206</td>
+      <td><a href="https://kidskingloves.com" target="_blank">kidskingloves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>207</td>
+      <td><a href="https://kilndriedcookingwood.com" target="_blank">kilndriedcookingwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>208</td>
+      <td><a href="https://kitchenfireextinguisher.com" target="_blank">kitchenfireextinguisher.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>209</td>
+      <td><a href="https://kitchenfireextinguishers.com" target="_blank">kitchenfireextinguishers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>210</td>
+      <td><a href="https://lightningaftermarket.com" target="_blank">lightningaftermarket.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>211</td>
+      <td><a href="https://lightningbumper.com" target="_blank">lightningbumper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>212</td>
+      <td><a href="https://lightningexterior.com" target="_blank">lightningexterior.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>213</td>
+      <td><a href="https://lightninginterior.com" target="_blank">lightninginterior.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>214</td>
+      <td><a href="https://lightningseats.com" target="_blank">lightningseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>215</td>
+      <td><a href="https://lightningsuspension.com" target="_blank">lightningsuspension.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>216</td>
+      <td><a href="https://limitingstraps.com" target="_blank">limitingstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>217</td>
+      <td><a href="https://limitstrapz.com" target="_blank">limitstrapz.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>218</td>
+      <td><a href="https://longestlastingfilters.com" target="_blank">longestlastingfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>219</td>
+      <td><a href="https://longlastingfilters.com" target="_blank">longlastingfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>220</td>
+      <td><a href="https://magnetopart.com" target="_blank">magnetopart.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>221</td>
+      <td><a href="https://magnetoupgrades.com" target="_blank">magnetoupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>222</td>
+      <td><a href="https://magnetowrangler.com" target="_blank">magnetowrangler.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>223</td>
+      <td><a href="https://matrixfilters.com" target="_blank">matrixfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>224</td>
+      <td><a href="https://milkmengolf.com" target="_blank">milkmengolf.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Golf</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>225</td>
+      <td><a href="https://moabwood.com" target="_blank">moabwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>226</td>
+      <td><a href="https://mobseat.com" target="_blank">mobseat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>227</td>
+      <td><a href="https://modutop.com" target="_blank">modutop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>228</td>
+      <td><a href="https://mollebag.com" target="_blank">mollebag.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>229</td>
+      <td><a href="https://molleinterior.com" target="_blank">molleinterior.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>230</td>
+      <td><a href="https://molleseats.com" target="_blank">molleseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>231</td>
+      <td><a href="https://mollestraps.com" target="_blank">mollestraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>232</td>
+      <td><a href="https://mollesystems.com" target="_blank">mollesystems.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>233</td>
+      <td><a href="https://molletop.com" target="_blank">molletop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>234</td>
+      <td><a href="https://muricantool.com" target="_blank">muricantool.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>235</td>
+      <td><a href="https://notippingapps.com" target="_blank">notippingapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>236</td>
+      <td><a href="https://nutboltdepot.com" target="_blank">nutboltdepot.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>237</td>
+      <td><a href="https://nutboltsupply.com" target="_blank">nutboltsupply.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>238</td>
+      <td><a href="https://nutsandboltsdepot.com" target="_blank">nutsandboltsdepot.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>239</td>
+      <td><a href="https://outdoorseatingcushion.com" target="_blank">outdoorseatingcushion.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>240</td>
+      <td><a href="https://overland4x.com" target="_blank">overland4x.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>241</td>
+      <td><a href="https://overlandbeach.com" target="_blank">overlandbeach.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>242</td>
+      <td><a href="https://overlanderupgrades.com" target="_blank">overlanderupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>243</td>
+      <td><a href="https://overlandpart.com" target="_blank">overlandpart.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>244</td>
+      <td><a href="https://overlandventure.com" target="_blank">overlandventure.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>245</td>
+      <td><a href="https://overlandwood.com" target="_blank">overlandwood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>246</td>
+      <td><a href="https://ovexgear.com" target="_blank">ovexgear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>247</td>
+      <td><a href="https://palletsjacks.com" target="_blank">palletsjacks.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>248</td>
+      <td><a href="https://palletsracking.com" target="_blank">palletsracking.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>249</td>
+      <td><a href="https://papayadrink.com" target="_blank">papayadrink.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>250</td>
+      <td><a href="https://patriotpartygoods.com" target="_blank">patriotpartygoods.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>251</td>
+      <td><a href="https://pincergear.com" target="_blank">pincergear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>252</td>
+      <td><a href="https://pleatpocketfilter.com" target="_blank">pleatpocketfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>253</td>
+      <td><a href="https://pleatpocketfilters.com" target="_blank">pleatpocketfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>254</td>
+      <td><a href="https://prefilterbuy.com" target="_blank">prefilterbuy.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>255</td>
+      <td><a href="https://prefilterhvac.com" target="_blank">prefilterhvac.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>256</td>
+      <td><a href="https://proballgear.com" target="_blank">proballgear.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>257</td>
+      <td><a href="https://purchasefilters.com" target="_blank">purchasefilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>258</td>
+      <td><a href="https://rackingpallets.com" target="_blank">rackingpallets.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>259</td>
+      <td><a href="https://rackspallet.com" target="_blank">rackspallet.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>260</td>
+      <td><a href="https://redifilter.com" target="_blank">redifilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>261</td>
+      <td><a href="https://redifilters.com" target="_blank">redifilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>262</td>
+      <td><a href="https://ridgeupgrades.com" target="_blank">ridgeupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>263</td>
+      <td><a href="https://ridgeutv.com" target="_blank">ridgeutv.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>264</td>
+      <td><a href="https://rollbarhandles.com" target="_blank">rollbarhandles.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>265</td>
+      <td><a href="https://rollstraps.com" target="_blank">rollstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>266</td>
+      <td><a href="https://rzrbag.com" target="_blank">rzrbag.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>267</td>
+      <td><a href="https://rzrbags.com" target="_blank">rzrbags.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>268</td>
+      <td><a href="https://rzrgoods.com" target="_blank">rzrgoods.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>269</td>
+      <td><a href="https://rzrlimitstraps.com" target="_blank">rzrlimitstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>270</td>
+      <td><a href="https://rzrseat.com" target="_blank">rzrseat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>271</td>
+      <td><a href="https://rzrshade.com" target="_blank">rzrshade.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>272</td>
+      <td><a href="https://rzrstorage.com" target="_blank">rzrstorage.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>273</td>
+      <td><a href="https://s2parts.com" target="_blank">s2parts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>274</td>
+      <td><a href="https://sandpapergrits.com" target="_blank">sandpapergrits.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>275</td>
+      <td><a href="https://scorpionbattinggloves.com" target="_blank">scorpionbattinggloves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>276</td>
+      <td><a href="https://scorpiongloves.com" target="_blank">scorpiongloves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>277</td>
+      <td><a href="https://scoutaccessories.com" target="_blank">scoutaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>278</td>
+      <td><a href="https://scoutbumpers.com" target="_blank">scoutbumpers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>279</td>
+      <td><a href="https://scouthandles.com" target="_blank">scouthandles.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>280</td>
+      <td><a href="https://scoutsuspension.com" target="_blank">scoutsuspension.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>281</td>
+      <td><a href="https://scoutterratruck.com" target="_blank">scoutterratruck.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>282</td>
+      <td><a href="https://scoutterraupgrades.com" target="_blank">scoutterraupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>283</td>
+      <td><a href="https://scouttravelerparts.com" target="_blank">scouttravelerparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>284</td>
+      <td><a href="https://scouttravelersuv.com" target="_blank">scouttravelersuv.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>285</td>
+      <td><a href="https://scouttravelerupgrades.com" target="_blank">scouttravelerupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>286</td>
+      <td><a href="https://scoutupgrades.com" target="_blank">scoutupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>287</td>
+      <td><a href="https://scramblerseatcovers.com" target="_blank">scramblerseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>288</td>
+      <td><a href="https://scramblertop.com" target="_blank">scramblertop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>289</td>
+      <td><a href="https://scramblertops.com" target="_blank">scramblertops.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>290</td>
+      <td><a href="https://sidebysidegoods.com" target="_blank">sidebysidegoods.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>291</td>
+      <td><a href="https://skipatip-preview" target="_blank">skipatip-preview</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>292</td>
+      <td><a href="https://slatetruckaccessories.com" target="_blank">slatetruckaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>293</td>
+      <td><a href="https://slatetruckpart.com" target="_blank">slatetruckpart.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>294</td>
+      <td><a href="https://spitfirewood.com" target="_blank">spitfirewood.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Firewood</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>295</td>
+      <td><a href="https://sprayshops.com" target="_blank">sprayshops.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>296</td>
+      <td><a href="https://stagaccessories.com" target="_blank">stagaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>297</td>
+      <td><a href="https://stagseats.com" target="_blank">stagseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>298</td>
+      <td><a href="https://stagupgrades.com" target="_blank">stagupgrades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>299</td>
+      <td><a href="https://stainwipes.com" target="_blank">stainwipes.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>300</td>
+      <td><a href="https://stoutpart.com" target="_blank">stoutpart.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>301</td>
+      <td><a href="https://stoutparts.com" target="_blank">stoutparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>302</td>
+      <td><a href="https://strapstiedown.com" target="_blank">strapstiedown.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>303</td>
+      <td><a href="https://subscriptionfilter-com" target="_blank">subscriptionfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>304</td>
+      <td><a href="https://subscriptionfilter.com" target="_blank">subscriptionfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>305</td>
+      <td><a href="https://supportstrap.com" target="_blank">supportstrap.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>306</td>
+      <td><a href="https://supportstraps.com" target="_blank">supportstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>307</td>
+      <td><a href="https://systemcovers.com" target="_blank">systemcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>308</td>
+      <td><a href="https://tacomaseats-com" target="_blank">tacomaseats-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>309</td>
+      <td><a href="https://tacoseatcovers.com" target="_blank">tacoseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>310</td>
+      <td><a href="https://tacoseats.com" target="_blank">tacoseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>311</td>
+      <td><a href="https://tacticalseatcovers-com" target="_blank">tacticalseatcovers-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>312</td>
+      <td><a href="https://tacticalseats-com" target="_blank">tacticalseats-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>313</td>
+      <td><a href="https://thinbluelineaccessories.com" target="_blank">thinbluelineaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>314</td>
+      <td><a href="https://tipfreerestaurantapp.com" target="_blank">tipfreerestaurantapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>315</td>
+      <td><a href="https://tjseatcovers.com" target="_blank">tjseatcovers.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>316</td>
+      <td><a href="https://topblockchainapp.com" target="_blank">topblockchainapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>317</td>
+      <td><a href="https://topchainsaw.com" target="_blank">topchainsaw.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>318</td>
+      <td><a href="https://topcryptocurrencyapp.com" target="_blank">topcryptocurrencyapp.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>319</td>
+      <td><a href="https://topdetailingkit.com" target="_blank">topdetailingkit.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>320</td>
+      <td><a href="https://topdiningapps.com" target="_blank">topdiningapps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">SkipATip</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>321</td>
+      <td><a href="https://topespressomaker.com" target="_blank">topespressomaker.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>322</td>
+      <td><a href="https://topgaragedooropener.com" target="_blank">topgaragedooropener.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>323</td>
+      <td><a href="https://topoffroadstores-com" target="_blank">topoffroadstores-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>324</td>
+      <td><a href="https://toppelletgrill.com" target="_blank">toppelletgrill.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Kitchen</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>325</td>
+      <td><a href="https://topportablepowerstation.com" target="_blank">topportablepowerstation.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Electronics/Health</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>326</td>
+      <td><a href="https://topqueenmattresses.com" target="_blank">topqueenmattresses.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>327</td>
+      <td><a href="https://toprecoverykit.com" target="_blank">toprecoverykit.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>328</td>
+      <td><a href="https://topsnowblower.com" target="_blank">topsnowblower.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>329</td>
+      <td><a href="https://toptrucktopper.com" target="_blank">toptrucktopper.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>330</td>
+      <td><a href="https://topwalkingpad.com" target="_blank">topwalkingpad.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>331</td>
+      <td><a href="https://topzeroturnmower.com" target="_blank">topzeroturnmower.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>332</td>
+      <td><a href="https://trektop.com" target="_blank">trektop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>333</td>
+      <td><a href="https://upgradedauto.com" target="_blank">upgradedauto.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>334</td>
+      <td><a href="https://upgradesauto.com" target="_blank">upgradesauto.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>335</td>
+      <td><a href="https://upgradesvehicle.com" target="_blank">upgradesvehicle.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>336</td>
+      <td><a href="https://usaseatcushion.com" target="_blank">usaseatcushion.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>337</td>
+      <td><a href="https://utvaccessory.com" target="_blank">utvaccessory.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>338</td>
+      <td><a href="https://utvbag.com" target="_blank">utvbag.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>339</td>
+      <td><a href="https://utvlimitstraps.com" target="_blank">utvlimitstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>340</td>
+      <td><a href="https://utvroof.com" target="_blank">utvroof.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>341</td>
+      <td><a href="https://utvshade.com" target="_blank">utvshade.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>342</td>
+      <td><a href="https://utvshades.com" target="_blank">utvshades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>343</td>
+      <td><a href="https://utvtop.com" target="_blank">utvtop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>344</td>
+      <td><a href="https://utvtops.com" target="_blank">utvtops.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>345</td>
+      <td><a href="https://voidfilter.com" target="_blank">voidfilter.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>346</td>
+      <td><a href="https://voidfilters.com" target="_blank">voidfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>347</td>
+      <td><a href="https://volconaccessories.com" target="_blank">volconaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>348</td>
+      <td><a href="https://volconaftermarket.com" target="_blank">volconaftermarket.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>349</td>
+      <td><a href="https://volconparts.com" target="_blank">volconparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>350</td>
+      <td><a href="https://volconseats.com" target="_blank">volconseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>351</td>
+      <td><a href="https://volconstagparts.com" target="_blank">volconstagparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>352</td>
+      <td><a href="https://wagoneersparts.com" target="_blank">wagoneersparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>353</td>
+      <td><a href="https://washingtoncommandershop.com" target="_blank">washingtoncommandershop.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>354</td>
+      <td><a href="https://weldapparel.com" target="_blank">weldapparel.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>355</td>
+      <td><a href="https://weldapron.com" target="_blank">weldapron.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>356</td>
+      <td><a href="https://weldaprons.com" target="_blank">weldaprons.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>357</td>
+      <td><a href="https://weldingsleeve.com" target="_blank">weldingsleeve.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>358</td>
+      <td><a href="https://weldingsleeves.com" target="_blank">weldingsleeves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>359</td>
+      <td><a href="https://weldingwearhouse.com" target="_blank">weldingwearhouse.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>360</td>
+      <td><a href="https://weldsleeves.com" target="_blank">weldsleeves.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Tools</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>361</td>
+      <td><a href="https://whatsizehvacfilter-com" target="_blank">whatsizehvacfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>362</td>
+      <td><a href="https://whicharebest.com" target="_blank">whicharebest.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>363</td>
+      <td><a href="https://wholehouseairfilter-com" target="_blank">wholehouseairfilter-com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>364</td>
+      <td><a href="https://windshieldwipe.com" target="_blank">windshieldwipe.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Wipers</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>365</td>
+      <td><a href="https://workerwearhouse.com" target="_blank">workerwearhouse.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>366</td>
+      <td><a href="https://workingwearhouse.com" target="_blank">workingwearhouse.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">Other</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>367</td>
+      <td><a href="https://wranglergrabhandles.com" target="_blank">wranglergrabhandles.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>368</td>
+      <td><a href="https://wranglerjeepaccessories.com" target="_blank">wranglerjeepaccessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>369</td>
+      <td><a href="https://wranglerjm.com" target="_blank">wranglerjm.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>370</td>
+      <td><a href="https://wranglerjmparts.com" target="_blank">wranglerjmparts.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>371</td>
+      <td><a href="https://wranglerrollbar.com" target="_blank">wranglerrollbar.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>372</td>
+      <td><a href="https://wranglerseat.com" target="_blank">wranglerseat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>373</td>
+      <td><a href="https://wranglerseats.com" target="_blank">wranglerseats.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>374</td>
+      <td><a href="https://wranglershade.com" target="_blank">wranglershade.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>375</td>
+      <td><a href="https://wranglershades.com" target="_blank">wranglershades.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>376</td>
+      <td><a href="https://wrappallet.com" target="_blank">wrappallet.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill building">BlockchainABCs</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>377</td>
+      <td><a href="https://x3accessories.com" target="_blank">x3accessories.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>378</td>
+      <td><a href="https://x3bags.com" target="_blank">x3bags.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>379</td>
+      <td><a href="https://x3limitstraps.com" target="_blank">x3limitstraps.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>380</td>
+      <td><a href="https://x3seat.com" target="_blank">x3seat.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>381</td>
+      <td><a href="https://x3storage.com" target="_blank">x3storage.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill live">Automotive</span></td>
+      <td>✅</td>
+      <td>2026-05-16</td>
+    </tr>
+<tr>
+      <td>382</td>
+      <td><a href="https://xfactorfilters.com" target="_blank">xfactorfilters.com</a> <span class="pill new-badge">NEW</span></td>
+      <td><span class="pill template">HVAC/Filters</span></td>
+      <td>—</td>
+      <td>2026-05-16</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
 <script>
-/* ═══════════════════════════════════════════════
-   MOBILE UX OVERHAUL — JS Module
-   Accordion cards, sticky nav, collapsible sections,
-   FAQ toggle, vehicle finder
-   ═══════════════════════════════════════════════ */
-(function() {
-  'use strict';
-
-  // ── 1. Accordion Review Detail Toggle ──
-  document.querySelectorAll('.review-detail-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var body = this.nextElementSibling;
-      if (!body) return;
-      var isCollapsed = body.classList.contains('collapsed');
-      if (isCollapsed) {
-        body.style.maxHeight = body.scrollHeight + 'px';
-        body.classList.remove('collapsed');
-        this.classList.add('expanded');
-        this.textContent = 'Hide details';
-      } else {
-        body.style.maxHeight = '0';
-        body.classList.add('collapsed');
-        this.classList.remove('expanded');
-        this.textContent = 'Read full review';
-      }
-    });
+function filterTable(){
+  const q = document.getElementById('search').value.toLowerCase();
+  document.querySelectorAll('#siteTable tbody tr').forEach(r=>{
+    r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
-
-  // ── 2. Collapsible Sections (buying guide, "what to look for") ──
-  document.querySelectorAll('.collapsible-header').forEach(function(header) {
-    header.addEventListener('click', function() {
-      var body = this.nextElementSibling;
-      if (!body || !body.classList.contains('collapsible-body')) return;
-      var isCollapsed = body.classList.contains('collapsed');
-      if (isCollapsed) {
-        body.style.maxHeight = body.scrollHeight + 'px';
-        body.classList.remove('collapsed');
-        this.classList.add('expanded');
-      } else {
-        body.style.maxHeight = '0';
-        body.classList.add('collapsed');
-        this.classList.remove('expanded');
-      }
-    });
+}
+function filterCat(cat, btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#siteTable tbody tr').forEach(r=>{
+    if(cat==='all') r.style.display='';
+    else r.style.display = r.cells[2].textContent.includes(cat) ? '' : 'none';
   });
-
-  // ── 3. FAQ Accordion ──
-  document.querySelectorAll('.faq-question').forEach(function(q) {
-    q.addEventListener('click', function() {
-      var body = this.nextElementSibling;
-      if (!body) return;
-      var isCollapsed = body.classList.contains('collapsed');
-      if (isCollapsed) {
-        body.style.maxHeight = body.scrollHeight + 'px';
-        body.classList.remove('collapsed');
-        this.classList.add('expanded');
-      } else {
-        body.style.maxHeight = '0';
-        body.classList.add('collapsed');
-        this.classList.remove('expanded');
-      }
-    });
-  });
-
-  // ── 4. Vehicle Finder (seat cover sites only) ──
-  var vfMake = document.getElementById('vf-make');
-  var vfModel = document.getElementById('vf-model');
-  var vfYear = document.getElementById('vf-year');
-  var vfBtn = document.getElementById('vf-go');
-
-  if (vfMake && vfModel && vfYear && vfBtn) {
-    var vehicleData = {
-      'Jeep': {
-        'Wrangler TJ': { years: '1997-2006', page: 'best-jeep-seat-covers.html' },
-        'Wrangler JK': { years: '2007-2010', page: 'best-jeep-seat-covers.html' },
-        'Wrangler JKU': { years: '2007-2018', page: 'best-jeep-seat-covers.html' },
-        'Wrangler JL': { years: '2018-2026', page: 'best-jeep-seat-covers.html' },
-        'Wrangler JLU': { years: '2018-2026', page: 'best-jeep-seat-covers.html' },
-        'Gladiator': { years: '2020-2026', page: 'best-jeep-seat-covers.html' }
-      },
-      'Toyota': {
-        'Tacoma (2nd Gen)': { years: '2005-2015', page: 'best-tacoma-seat-covers.html' },
-        'Tacoma (3rd Gen)': { years: '2016-2023', page: 'best-tacoma-seat-covers.html' },
-        '4Runner': { years: '2010-2024', page: 'best-toyota-4runner-seat-covers.html' }
-      },
-      'Ford': {
-        'Bronco': { years: '2021-2026', page: 'best-bronco-seat-covers.html' }
-      }
-    };
-
-    // Check for bestseatcover.com-specific pages
-    var isBSC = window.location.hostname.indexOf('bestseatcover') !== -1;
-    if (isBSC) {
-      vehicleData['Jeep']['Wrangler TJ'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Jeep']['Wrangler JK'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Jeep']['Wrangler JKU'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Jeep']['Wrangler JL'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Jeep']['Wrangler JLU'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Jeep']['Gladiator'].page = 'best-jeep-seat-covers.html';
-      vehicleData['Toyota']['Tacoma (2nd Gen)'].page = 'best-toyota-tacoma-seat-covers.html';
-      vehicleData['Toyota']['Tacoma (3rd Gen)'].page = 'best-toyota-tacoma-seat-covers.html';
-      vehicleData['Toyota']['4Runner'].page = 'best-toyota-4runner-seat-covers.html';
-      vehicleData['Ford']['Bronco'].page = 'best-ford-bronco-seat-covers.html';
-    }
-
-    // Check for tacomaseats.com-specific pages
-    var isTacoma = window.location.hostname.indexOf('tacomaseats') !== -1;
-    if (isTacoma) {
-      vehicleData['Toyota']['Tacoma (2nd Gen)'].page = 'best-tacoma-seat-covers.html';
-      vehicleData['Toyota']['Tacoma (3rd Gen)'].page = 'best-tacoma-seat-covers.html';
-      vehicleData['Toyota']['4Runner'].page = 'best-tacoma-seat-covers.html';
-    }
-
-    function populateModels() {
-      var make = vfMake.value;
-      vfModel.innerHTML = '<option value="">Select Model</option>';
-      vfYear.innerHTML = '<option value="">Select Year</option>';
-      if (make && vehicleData[make]) {
-        Object.keys(vehicleData[make]).forEach(function(model) {
-          var opt = document.createElement('option');
-          opt.value = model;
-          opt.textContent = model;
-          vfModel.appendChild(opt);
-        });
-      }
-    }
-
-    function populateYears() {
-      var make = vfMake.value;
-      var model = vfModel.value;
-      vfYear.innerHTML = '<option value="">Select Year</option>';
-      if (make && model && vehicleData[make] && vehicleData[make][model]) {
-        var range = vehicleData[make][model].years.split('-');
-        var start = parseInt(range[0]);
-        var end = parseInt(range[1]);
-        for (var y = end; y >= start; y--) {
-          var opt = document.createElement('option');
-          opt.value = y;
-          opt.textContent = y;
-          vfYear.appendChild(opt);
-        }
-      }
-    }
-
-    vfMake.addEventListener('change', populateModels);
-    vfModel.addEventListener('change', populateYears);
-    vfBtn.addEventListener('click', function() {
-      var make = vfMake.value;
-      var model = vfModel.value;
-      if (make && model && vehicleData[make] && vehicleData[make][model]) {
-        window.location.href = vehicleData[make][model].page;
-      } else if (make) {
-        // Fallback: go to first model's page
-        var models = Object.keys(vehicleData[make]);
-        if (models.length) window.location.href = vehicleData[make][models[0]].page;
-      }
-    });
-  }
-
-  // ── 5. Initialize collapsed states on mobile ──
-  function initMobileCollapse() {
-    if (window.innerWidth > 768) return;
-    document.querySelectorAll('.collapsible-body').forEach(function(body) {
-      body.classList.add('collapsed');
-      body.style.maxHeight = '0';
-    });
-    document.querySelectorAll('.review-detail-body').forEach(function(body) {
-      body.classList.add('collapsed');
-      body.style.maxHeight = '0';
-    });
-    document.querySelectorAll('.faq-toggle-body').forEach(function(body) {
-      body.classList.add('collapsed');
-      body.style.maxHeight = '0';
-    });
-  }
-  initMobileCollapse();
-})();
-
+}
 </script>
-
-<a href="#" class="back-to-top" id="btt" aria-label="Back to top">↑</a>
-<script>
-(function(){var b=document.getElementById('btt'),h=document.querySelector('header,nav');
-window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>400);if(h)h.classList.toggle('scrolled',window.scrollY>50)});
-b.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})})})();
-</script>
-
 </body>
 </html>
