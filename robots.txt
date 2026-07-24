@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /network-dashboard.html
-
 Sitemap: https://whatarebest.com/sitemap.xml
