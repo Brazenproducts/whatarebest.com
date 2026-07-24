@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page Not Found | WhatAreBest.com</title>
+<meta name="description" content="Page not found.">
+<link rel="canonical" href="https://whatarebest.com/404.html">
+<meta property="og:title" content="Page Not Found | WhatAreBest.com">
+<meta property="og:description" content="Page not found.">
+<meta property="og:url" content="https://whatarebest.com/404.html">
+<meta name="robots" content="index,follow">
+
+<style>
+:root {
+  --primary: #0a5c36;
+  --primary-light: #14803d;
+  --accent: #f59e0b;
+  --text: #1a1a2e;
+  --text-light: #555;
+  --bg: #fff;
+  --bg-alt: #f8f9fa;
+  --border: #e2e8f0;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,.08);
+  --max-w: 1200px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--primary);text-decoration:none}
+a:hover{color:var(--primary-light);text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+
+/* HEADER */
+.site-header{background:var(--primary);color:#fff;padding:0.75rem 1rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.header-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.site-logo{font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:-0.5px}
+.site-logo span{color:var(--accent)}
+.header-search{flex:1;min-width:200px;display:flex;gap:0.5rem}
+.header-search input{flex:1;padding:0.5rem 0.75rem;border-radius:var(--radius);border:none;font-size:0.95rem}
+.header-search button{padding:0.5rem 1rem;background:var(--accent);border:none;border-radius:var(--radius);font-weight:600;cursor:pointer;color:#1a1a2e}
+.main-nav{width:100%;display:flex;gap:0.75rem;flex-wrap:wrap;padding-top:0.5rem;border-top:1px solid rgba(255,255,255,.2)}
+.main-nav a{color:rgba(255,255,255,.9);font-size:0.85rem;white-space:nowrap}
+.main-nav a:hover{color:#fff}
+
+/* BREADCRUMB */
+.breadcrumb{background:var(--bg-alt);padding:0.75rem 1rem;border-bottom:1px solid var(--border);font-size:0.875rem}
+.breadcrumb{max-width:var(--max-w);margin:0 auto}
+.breadcrumb a{color:var(--primary)}
+.breadcrumb a:not(:last-child)::after{content:" › ";color:var(--text-light)}
+
+/* HOMEPAGE HERO */
+.hero{background:linear-gradient(135deg,var(--primary) 0%,#1a6b40 100%);color:#fff;padding:3rem 1rem;text-align:center}
+.hero h1{font-size:2.5rem;font-weight:800;margin-bottom:0.75rem}
+.hero p{font-size:1.15rem;opacity:.9;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-search{display:flex;gap:0.5rem;max-width:500px;margin:0 auto}
+.hero-search input{flex:1;padding:0.875rem 1rem;border-radius:var(--radius);border:none;font-size:1rem}
+.hero-search button{padding:0.875rem 1.5rem;background:var(--accent);border:none;border-radius:var(--radius);font-weight:700;cursor:pointer;font-size:1rem;color:#1a1a2e}
+
+/* CATEGORY GRID */
+.main-cat-grid{max-width:var(--max-w);margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem}
+.cat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;transition:transform .15s,box-shadow .15s;text-decoration:none;color:var(--text)}
+.cat-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.12);text-decoration:none}
+.cat-card .icon{font-size:2.5rem;margin-bottom:0.5rem}
+.cat-card h3{font-size:1rem;font-weight:700;margin-bottom:0.25rem}
+.cat-card p{font-size:0.8rem;color:var(--text-light);line-height:1.4}
+
+/* SUBCATEGORY HUB */
+.subcat-grid{max-width:var(--max-w);margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.subcat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+.subcat-card h3{font-size:1rem;font-weight:700;margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:2px solid var(--primary)}
+.subcat-card ul{list-style:none;display:flex;flex-direction:column;gap:0.3rem}
+.subcat-card ul li a{font-size:0.875rem;color:var(--text-light);display:flex;align-items:center;gap:0.3rem}
+.subcat-card ul li a::before{content:"›";color:var(--primary);font-weight:700}
+.subcat-card ul li a:hover{color:var(--primary)}
+
+/* LEAF REVIEW PAGE */
+.leaf-layout{max-width:var(--max-w);margin:0 auto;padding:1.5rem 1rem;display:grid;grid-template-columns:1fr 280px;gap:2rem}
+@media(max-width:800px){.leaf-layout{grid-template-columns:1fr}}
+.leaf-main{}
+.leaf-sidebar{display:flex;flex-direction:column;gap:1.25rem}
+
+.page-intro{font-size:1rem;color:var(--text-light);margin:1rem 0 1.5rem;max-width:700px;line-height:1.7}
+.section-title{font-size:1.1rem;font-weight:700;color:var(--text);margin:1.5rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:2px solid var(--primary)}
+
+/* PRODUCT CARDS */
+.product-grid{display:flex;flex-direction:column;gap:1.5rem}
+.product-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;display:grid;grid-template-columns:160px 1fr;gap:1.25rem;position:relative;box-shadow:var(--shadow)}
+@media(max-width:600px){.product-card{grid-template-columns:1fr}}
+.product-card.top-pick{border-color:var(--primary);border-width:2px}
+.product-card.top-pick::before{content:attr(data-badge);position:absolute;top:-1px;left:1rem;background:var(--primary);color:#fff;padding:0.2rem 0.6rem;border-radius:0 0 var(--radius) var(--radius);font-size:0.75rem;font-weight:700}
+.product-img-wrap{text-align:center}
+.product-img-wrap img{width:140px;height:140px;object-fit:contain;margin:0 auto}
+.product-body h3{font-size:1.05rem;font-weight:700;margin-bottom:0.25rem}
+.product-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap}
+.stars{color:#f59e0b;font-weight:700;font-size:0.875rem}
+.price-tag{font-weight:700;color:var(--primary-light)}
+.product-desc{font-size:0.875rem;color:var(--text-light);line-height:1.6;margin-bottom:0.75rem}
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.75rem;font-size:0.82rem}
+.pros ul,.cons ul{list-style:none;display:flex;flex-direction:column;gap:0.25rem}
+.pros li::before{content:"✓ ";color:#16a34a;font-weight:700}
+.cons li::before{content:"✗ ";color:#dc2626;font-weight:700}
+.pros h4{color:#16a34a;font-size:0.8rem;font-weight:700;margin-bottom:0.25rem}
+.cons h4{color:#dc2626;font-size:0.8rem;font-weight:700;margin-bottom:0.25rem}
+.btn-amazon{display:inline-flex;align-items:center;gap:0.4rem;background:#f59e0b;color:#1a1a2e;padding:0.6rem 1.1rem;border-radius:var(--radius);font-weight:700;font-size:0.875rem;text-decoration:none;transition:background .15s}
+.btn-amazon:hover{background:#d97706;text-decoration:none;color:#1a1a2e}
+
+/* SIDEBAR WIDGETS */
+.sidebar-widget{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
+.sidebar-widget h4{font-size:0.9rem;font-weight:700;margin-bottom:0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border)}
+.sidebar-widget ul{list-style:none;display:flex;flex-direction:column;gap:0.4rem}
+.sidebar-widget ul li a{font-size:0.82rem;color:var(--text-light)}
+.sidebar-widget ul li a:hover{color:var(--primary)}
+.sidebar-widget ul li a::before{content:"→ "}
+
+/* COMING SOON PAGE */
+.coming-soon-box{max-width:600px;margin:3rem auto;text-align:center;padding:2rem;background:var(--bg-alt);border-radius:var(--radius);border:1px solid var(--border)}
+.coming-soon-box h1{font-size:1.5rem;margin-bottom:0.5rem}
+.coming-soon-box p{color:var(--text-light);margin-bottom:1rem}
+
+/* PAGE TITLES */
+.page-header{background:var(--bg-alt);border-bottom:1px solid var(--border);padding:2rem 1rem}
+.page-header-inner{max-width:var(--max-w);margin:0 auto}
+.page-header h1{font-size:1.9rem;font-weight:800;margin-bottom:0.25rem}
+.page-header p{color:var(--text-light);font-size:0.95rem}
+
+/* SEARCH RESULTS */
+#search-results{max-width:var(--max-w);margin:1rem auto;padding:0 1rem}
+.search-result-item{display:flex;gap:1rem;align-items:flex-start;padding:0.75rem 0;border-bottom:1px solid var(--border)}
+.search-result-item a{font-weight:600}
+.search-result-item p{font-size:0.875rem;color:var(--text-light)}
+
+/* UTILITY */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 1rem}
+.mt-1{margin-top:0.5rem}.mt-2{margin-top:1rem}.mt-3{margin-top:1.5rem}
+.text-sm{font-size:0.875rem}.text-muted{color:var(--text-light)}
+</style>
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">WhatAreBest<span>.com</span></a>
+    <div class="header-search">
+      <input type="search" id="header-search" placeholder="Search 500+ categories..." autocomplete="off">
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <nav class="main-nav"><a href="/kitchen/">🍳 Kitchen & Dining</a><a href="/home/">🏡 Home & Garden</a><a href="/electronics/">💻 Electronics & Tech</a><a href="/tools/">🔧 Tools & Home Improvement</a><a href="/outdoor-sports/">🏕️ Outdoor & Sports</a><a href="/fitness/">💪 Fitness & Health</a><a href="/pets/">🐾 Pet Supplies</a><a href="/baby-kids/">👶 Baby & Kids</a><a href="/office/">🖊️ Office & School</a><a href="/beauty/">✨ Beauty & Personal Care</a><a href="/toys-games/">🎮 Toys & Games</a><a href="/automotive/">🚗 Automotive</a></nav>
+  </div>
+</header>
+
+<div class="coming-soon-box">
+  <h1>Page Not Found</h1>
+  <p>The page you're looking for doesn't exist.</p>
+  <a href="/">← Back to Home</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 WhatAreBest.com — Independent product reviews and comparisons.</p>
+    <p class="affiliate-disc">As an Amazon Associate we earn from qualifying purchases. Prices and availability are subject to change.</p>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/kitchen/">Kitchen & Dining</a><a href="/home/">Home & Garden</a><a href="/electronics/">Electronics & Tech</a><a href="/tools/">Tools & Home Improvement</a><a href="/outdoor-sports/">Outdoor & Sports</a><a href="/fitness/">Fitness & Health</a><a href="/pets/">Pet Supplies</a><a href="/baby-kids/">Baby & Kids</a><a href="/office/">Office & School</a><a href="/beauty/">Beauty & Personal Care</a><a href="/toys-games/">Toys & Games</a><a href="/automotive/">Automotive</a>
+    </nav>
+  </div>
+</footer>
+<script>
+const SEARCH_INDEX = [];
+
+function doSearch(q) {
+  if (!q) q = document.getElementById('header-search')?.value || document.getElementById('hero-search')?.value || '';
+  if (!q.trim()) return;
+  window.location.href = '/search/?q=' + encodeURIComponent(q.trim());
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('input[type=search]').forEach(inp => {
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(inp.value); });
+  });
+  // Search page handler
+  if (window.location.pathname.startsWith('/search/')) {
+    const q = new URLSearchParams(window.location.search).get('q') || '';
+    document.querySelectorAll('input[type=search]').forEach(inp => inp.value = q);
+    const res = document.getElementById('search-results');
+    if (!res || !q) return;
+    const hits = SEARCH_INDEX.filter(item =>
+      (item.title + ' ' + item.desc + ' ' + (item.cat||'')).toLowerCase().includes(q.toLowerCase())
+    ).slice(0, 40);
+    if (!hits.length) { res.innerHTML = '<p>No results found for <strong>' + q + '</strong></p>'; return; }
+    res.innerHTML = '<h2 style="margin-bottom:1rem">Results for: ' + q + '</h2>' +
+      hits.map(h => `<div class="search-result-item"><div><a href="${h.url}">${h.title}</a><p>${h.desc}</p></div></div>`).join('');
+  }
+});
+</script>
+</body>
+</html>
