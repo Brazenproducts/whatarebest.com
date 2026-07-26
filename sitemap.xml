@@ -265,16 +265,40 @@
   <url><loc>https://whatarebest.com/outdoor-sports/water-sports/best-dry-bags/</loc><priority>0.7</priority></url>
   <url><loc>https://whatarebest.com/outdoor-sports/water-sports/best-wetsuits/</loc><priority>0.7</priority></url>
   <url><loc>https://whatarebest.com/outdoor-sports/water-sports/best-life-jackets/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/</loc><priority>0.8</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-pickleball-paddles/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-tennis-rackets/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-basketball-hoops/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-cornhole-sets/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-bocce-ball-sets/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-baseballs/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-basketballs/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-footballs/</loc><priority>0.7</priority></url>
-  <url><loc>https://whatarebest.com/outdoor-sports/team-sports/best-soccer-balls/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-baseballs/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-baseball-bats/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-baseball-gloves/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-batting-gloves/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-baseball-helmets/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/baseball/best-baseball-cleats/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/basketball/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/basketball/best-basketballs/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/basketball/best-basketball-hoops/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/basketball/best-basketball-shoes/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/basketball/best-basketball-training-aids/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/football/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/football/best-footballs/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/football/best-flag-football-sets/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/football/best-football-training-aids/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/best-soccer-balls/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/best-soccer-cleats/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/best-shin-guards/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/best-soccer-goals/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/soccer/best-goalkeeper-gloves/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/tennis/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/tennis/best-tennis-rackets/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/tennis/best-tennis-balls/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/tennis/best-tennis-shoes/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/tennis/best-tennis-bags/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/pickleball/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/pickleball/best-pickleball-paddles/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/pickleball/best-pickleball-balls/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/pickleball/best-pickleball-nets/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/backyard-sports/</loc><priority>0.8</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/backyard-sports/best-cornhole-sets/</loc><priority>0.7</priority></url>
+  <url><loc>https://whatarebest.com/outdoor-sports/backyard-sports/best-bocce-ball-sets/</loc><priority>0.7</priority></url>
   <url><loc>https://whatarebest.com/outdoor-sports/winter-sports/</loc><priority>0.8</priority></url>
   <url><loc>https://whatarebest.com/outdoor-sports/winter-sports/best-ski-helmets/</loc><priority>0.7</priority></url>
   <url><loc>https://whatarebest.com/outdoor-sports/winter-sports/best-ski-goggles/</loc><priority>0.7</priority></url>
